@@ -5,7 +5,7 @@
 	<script type="text/javascript">
 		window.onmessage = function(e) {
 			e = e || event;
-			alert(e.data);
+			alert("a.html向b.html传递消息：" + e.data + ", 并存入到localStorage，F12查看吧");
 			window.mybname = e.data;
 			localStorage.gg = e.data;
 		}
